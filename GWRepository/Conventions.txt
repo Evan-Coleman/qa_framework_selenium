@@ -1,0 +1,22 @@
+﻿Elements:
+	text boxes				= txt*
+	selectors				= sel*
+	Table div				= divTable*
+	Error Message			= errorMessage
+	Text of errorMessage	= errorMessageText
+	Radio selectors			= rad*
+	check boxes				= check*
+
+Pages:
+	All methods interacting with page elements must check for their availablity / visibility
+			if (_webDriver.FindElementByCssSelector("a[id *= 'ResultsLV:0:SelectBtn']").Displayed)
+				{
+					sClick(_webDriver.FindElementByCssSelector("a[id *= 'ResultsLV:0:SelectBtn']"));
+					return true;
+				}
+			else
+				{
+					Debug.WriteLine("ERROR: No duplicate contacts available to click");
+					return false;
+				}
+	When adding a new page, you must create it, and then add it to Pages.cs

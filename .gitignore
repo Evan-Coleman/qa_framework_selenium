@@ -3,3 +3,8 @@
 ################################################################################
 
 /.vs/GWRepository
+/GWRepository/bin/Debug
+/GWRepository/obj/Debug
+/GWTesting/bin/Debug
+/GWTesting/obj/Debug
+/packages
